@@ -73,6 +73,7 @@ def usage():
 	print 'USAGE: python hulk.py <url>'
 	print 'you can add "safe" after url, to autoshut after dos'
 	print '---------------------------------------------------'
+
 	
 #http request
 def httpcall(url):
@@ -96,7 +97,7 @@ def httpcall(url):
 	except urllib2.HTTPError, e:
 			#print e.code
 			set_flag(1)
-			print 'Mã phản hồi 500'
+			print 'Response Code 500'
 			code=500
 	except urllib2.URLError, e:
 			#print e.reason
@@ -127,7 +128,7 @@ class MonitorThread(threading.Thread):
 				print "%d Requests Sent" % (request_counter)
 				previous=request_counter
 		if flag==2:
-			print "\n-- Đã kết thúc cuộc tấn công HULK --"
+			print "\n-- HULK Attack Finished --"
 
 #execute 
 if len(sys.argv) < 2:
@@ -138,7 +139,7 @@ else:
 		usage()
 		sys.exit()
 	else:
-		print "-- Đã bắt đầu tấn công HULK --"
+		print "-- HULK Attack Started --"
 		if len(sys.argv)== 3:
 			if sys.argv[2]=="safe":
 				set_safe()
