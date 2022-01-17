@@ -13,12 +13,6 @@ nhóm kết nối trên cùng một phần cứng hơn phiên bản Python có t
 
 Công cụ này được nhắm mục tiêu để kiểm tra căng thẳng và có thể thực sự làm hỏng máy chủ được định cấu hình kém hoặc ứng dụng được tạo ra kém. Hãy sử dụng nó một cách cẩn thận.
 
-Ví dụ:
-
-    $ hulk -site http://example.com/test/ 2>/dev/null
-
-    $ HULKMAXPROCS=4096 hulk -site http://example.com 2>/tmp/errlog
-
 Môi trường hữu ích vars:
 
 * GOMAXPROCS
@@ -31,6 +25,18 @@ Thêm chi tiết: http://old.siberian.laika.name/node/7
 Cập nhật: tốt, tôi đã tạo tiện ích này cho tác vụ một lần khi tôi chỉ chơi một chút với golang. Thật ngạc nhiên khi tôi thấy rằng
 tiện ích này được những người khác sử dụng, được đánh giá cao trên github và thậm chí còn được đưa vào [BlackArch Linux distro] (http://blackarch.org/dos.html). Vì vậy, tôi đã dọn dẹp mã một chút.
 
+Cài Đặt
+=======
+yêu cầu python
+`apt install python
+`
+tải xuống kho lưu trữ
+`git clone 
+`
+Cấch sử dụng
+`python hulk.py <url>
+`
+
 Giấy phép
 =======
 
@@ -38,3 +44,7 @@ Tôi nghĩ nó có thể là miền công cộng vì nó chỉ là một đoạn
 Tôi đã chọn GPL cho nó. Okey. Vì vậy, hãy sử dụng phiên bản HULK được cấp phép theo GPLv3. Xem LICENSE.
 
 Tôi không liên quan đến tiện ích HULK gốc bằng Python. Tiện ích HULK gốc là quyền của Barry Shteiman (http://sectorix.com). Không có bất kỳ tham chiếu nào đến giấy phép trong nguồn gốc thì nó không thuộc GPL. Hãy hỏi tác giả của tiện ích ban đầu về giấy phép.
+
+nguồn
+=======
+https://github.com/grafov/hulk
