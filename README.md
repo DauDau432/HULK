@@ -28,14 +28,18 @@ tiện ích này được những người khác sử dụng, được đánh gi
 Cài Đặt
 =======
 yêu cầu python
-`apt install python
-`
+```
+apt install python
+```
 tải xuống kho lưu trữ
-`git clone 
-`
+```
+git clone 
+```
 Cấch sử dụng
-`python hulk.py <url>
-`
+=======
+```
+python hulk.py <url>
+```
 
 Giấy phép
 =======
