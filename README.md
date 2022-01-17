@@ -35,6 +35,10 @@ tải xuống kho lưu trữ
 ```
 git clone https://github.com/DauDau432/hulk.git
 ```
+di chuyển vào thư mục hulk
+```
+cd hulk
+```
 Cách sử dụng
 =======
 ```
