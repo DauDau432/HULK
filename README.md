@@ -33,7 +33,7 @@ apt install python
 ```
 tải xuống kho lưu trữ
 ```
-git clone https://github.com/DauDau432/-hulk.git
+git clone https://github.com/DauDau432/hulk.git
 ```
 Cách sử dụng
 =======
