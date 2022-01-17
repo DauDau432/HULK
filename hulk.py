@@ -1,11 +1,11 @@
 # ----------------------------------------------------------------------------------------------
-# HULK - Vua tải không thể chịu được HTTP
+# HULK - HTTP Unbearable Load King
 #
-# công cụ này là một công cụ dos có nghĩa là đặt tải nặng lên các máy chủ HTTP để mang chúng
-# đầu gối của họ bằng cách cạn kiệt nguồn tài nguyên, nó chỉ dành cho mục đích nghiên cứu
-# và bất kỳ việc sử dụng độc hại nào của công cụ này đều bị cấm.
+# this tool is a dos tool that is meant to put heavy load on HTTP servers in order to bring them
+# to their knees by exhausting the resource pool, its is meant for research purposes only
+# and any malicious usage of this tool is prohibited.
 #
-# tác giả: Barry Shteiman, phiên bản 1.0
+# author :  Barry Shteiman , version 1.0
 # ----------------------------------------------------------------------------------------------
 import urllib2
 import sys
