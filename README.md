@@ -33,9 +33,9 @@ apt install python
 ```
 tải xuống kho lưu trữ
 ```
-git clone 
+git clone https://github.com/DauDau432/-hulk.git
 ```
-Cấch sử dụng
+Cách sử dụng
 =======
 ```
 python hulk.py <url>
