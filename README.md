@@ -38,10 +38,16 @@ di chuyển vào thư mục hulk
 cd hulk
 ```
 ### Cách sử dụng
+với python
 ```
 python hulk.py <url>
 ```
 
+với golang
+***hoặc***
+```
+go run hulk.go -site <url>
+```
 ### Giấy phép
 Tôi nghĩ nó có thể là miền công cộng vì nó chỉ là một đoạn mã ngắn và đơn giản nhưng vì lý do gì tôi không nhớ nữa
 Tôi đã chọn GPL cho nó. Okey. Vì vậy, hãy sử dụng phiên bản HULK được cấp phép theo GPLv3. Xem LICENSE.
