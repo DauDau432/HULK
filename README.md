@@ -25,26 +25,24 @@ Cập nhật: tốt, tôi đã tạo tiện ích này cho tác vụ một lần 
 tiện ích này được những người khác sử dụng, được đánh giá cao trên github và thậm chí còn được đưa vào [BlackArch Linux distro] (http://blackarch.org/dos.html). Vì vậy, tôi đã dọn dẹp mã một chút.
 
 ### Cài Đặt
-yêu cầu python
+- Yêu cầu python
 ```
 apt install python
 ```
-tải xuống kho lưu trữ
+- Tải xuống kho lưu trữ
 ```
 git clone https://github.com/DauDau432/hulk.git
 ```
-di chuyển vào thư mục hulk
+- Di chuyển vào thư mục hulk
 ```
 cd hulk
 ```
 ### Cách sử dụng
-với python
+- Với python
 ```
 python hulk.py <url>
 ```
-
-với golang
-***hoặc***
+- Với golang
 ```
 go run hulk.go -site <url>
 ```
