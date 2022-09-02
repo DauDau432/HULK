@@ -29,6 +29,10 @@ tiện ích này được những người khác sử dụng, được đánh gi
 ```
 apt install python
 ```
+- Hoặc golang
+```
+apt install golang
+```
 - Tải xuống kho lưu trữ
 ```
 git clone https://github.com/DauDau432/hulk.git
