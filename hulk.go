@@ -1,11 +1,11 @@
 package main
 
 /*
- HULK DoS tool on <strike>steroids</strike> goroutines. Just ported from Python with some improvements.
- Original Python utility by Barry Shteiman http://www.sectorix.com/2012/05/17/hulk-web-server-dos-tool/
+Công cụ HULK DoS trên các goroutines <strike> steroid </strike>. Chỉ được chuyển từ Python với một số cải tiến.
+  Tiện ích Python gốc của Barry Shteiman http://www.sectorix.com/2012/05/17/hulk-web-server-dos-tool/
 
- This go program licensed under GPLv3.
- Copyright Alexander I.Grafov <grafov@gmail.com>
+Chương trình cờ vây này được cấp phép theo GPLv3.
+Bản quyền Alexander I.Grafov <grafov@gmail.com>
 */
 
 import (
