@@ -367,7 +367,7 @@ func httpcall(url string, host string, data string, headers arrayFlags, s chan u
 		if data == "" {
 			q, err = http.NewRequest("GET", url+param_joiner+buildblock(rand.Intn(7)+3)+"="+buildblock(rand.Intn(7)+3), nil)
 		} else {
-			q, err = http.NewRequest("HEAD", url, strings.NewReader(data))
+			q, err = http.NewRequest("POST", url, strings.NewReader(data))
 		}
 
 		if err != nil {
