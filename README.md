@@ -20,7 +20,6 @@ Môi trường hữu ích vars:
 
 Cập nhật: tốt, tôi đã tạo tiện ích này cho tác vụ một lần khi tôi chỉ chơi một chút với golang. Thật ngạc nhiên khi tôi thấy rằng
 tiện ích này được những người khác sử dụng, được đánh giá cao trên github và thậm chí còn được đưa vào [BlackArch Linux distro](http://blackarch.org/dos.html).
-
 Vì vậy, tôi đã dọn dẹp mã một chút.
 
 ### Cài Đặt
