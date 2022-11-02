@@ -1,8 +1,7 @@
 # Hulk DoS tool
 
 Công cụ HULK DoS được chuyển sang ngôn ngữ Go từ Python.
-Tiện ích Python gốc của Barry Shteiman http://www.sectorix.com/2012/05/17/hulk-web-server-dos-tool/
-Tôi vừa chuyển mã vì nó nhanh và bẩn. Tên các hàm gốc được giữ lại và phần lớn logic gốc cũng được giữ lại.
+Tên các hàm gốc được giữ lại và phần lớn logic gốc cũng được giữ lại.
 
 Sự khác biệt chính so với phiên bản Python nằm trong kiến ​​trúc Golang cho đồng thời: goroutines. Hulk.py chạy
 một luồng mới cho mỗi kết nối trong nhóm kết nối để nó sử dụng hàng trăm và hàng nghìn luồng.
@@ -19,10 +18,10 @@ Môi trường hữu ích vars:
 * HULKMAXPROCS
    Giới hạn nhóm kết nối (1024 theo mặc định).
 
-Thêm chi tiết: http://old.siberian.laika.name/node/7 
-
 Cập nhật: tốt, tôi đã tạo tiện ích này cho tác vụ một lần khi tôi chỉ chơi một chút với golang. Thật ngạc nhiên khi tôi thấy rằng
-tiện ích này được những người khác sử dụng, được đánh giá cao trên github và thậm chí còn được đưa vào [BlackArch Linux distro] (http://blackarch.org/dos.html). Vì vậy, tôi đã dọn dẹp mã một chút.
+tiện ích này được những người khác sử dụng, được đánh giá cao trên github và thậm chí còn được đưa vào [BlackArch Linux distro](http://blackarch.org/dos.html).
+
+Vì vậy, tôi đã dọn dẹp mã một chút.
 
 ### Cài Đặt
 - Yêu cầu python
