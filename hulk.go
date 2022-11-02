@@ -291,7 +291,7 @@ func main() {
 	}
 
 	if version {
-		fmt.Println("Bản cải tiến từ Đậu Đậu", __version__)
+		fmt.Println("  Bản cải tiến từ Đậu Đậu", __version__)
 		os.Exit(0)
 	}
 
@@ -311,7 +311,7 @@ func main() {
 	}
 
 	go func() {
-		fmt.Println("  -- Đã bắt đầu tấn công  --\n           Go!\n\n")
+		fmt.Println("  -- Đã bắt đầu tấn công  --\n     Được chỉnh sửa bởi Đậu Đậu\n\n")
 		ss := make(chan uint8, 8)
 		var (
 			err, sent int32
