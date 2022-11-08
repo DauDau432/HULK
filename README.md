@@ -48,13 +48,6 @@ python hulk.py <url>
 ```
 go run hulk.go -site <url>
 ```
-- StresserUS
-```
-chmod +x StresserUS 
-```
-```
-./StresserUS version=2 host=https://www.victim.com/ limit=64 time=300 list=http.txt threads=60 mode=GET
-```
 ### Giấy phép
 Tôi nghĩ nó có thể là miền công cộng vì nó chỉ là một đoạn mã ngắn và đơn giản nhưng vì lý do gì tôi không nhớ nữa
 Tôi đã chọn GPL cho nó. Okey. Vì vậy, hãy sử dụng phiên bản HULK được cấp phép theo GPLv3. Xem LICENSE.
